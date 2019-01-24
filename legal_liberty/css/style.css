@@ -120,6 +120,73 @@ button:focus {
   opacity: 1;
 }
 
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  padding-top: 20px;
+  background: url(../img/header-bg.png);
+  width: 600px;
+  height: 300px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 100px;
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 300;
+  cursor: pointer;
+  z-index: 44;
+}
+
+.popup-close {
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+.popup-title {
+  text-align: center;
+  font-size: 38px;
+}
+
+.popup input {
+  padding-left: 15px;
+  width: 270px;
+  height: 40px;
+  border: none;
+  border-radius: 35px;
+  margin: 0 auto;
+  display: block;
+}
+
+.popup input:focus {
+  outline: none;
+}
+
+.popup-input__first {
+  margin-top: 15px;
+}
+
+.popup-input__second {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+
+.popup .btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
 * {
   padding: 0px;
   margin: 0px;

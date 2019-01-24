@@ -10,6 +10,24 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
+  <div class="overlay">
+    <div class="popup">
+      <form action="#">
+        <div class="popup-title">
+          Заказать консультацию
+        </div>
+        <div class="popup-close"> &times;</div>
+        <div class="popup-input__first">
+          <input type="text" placeholder="Ваш номер телефона">
+        </div>
+        <div class="popup-input__second">
+          <input type="text" placeholder="Ваша электронная почта">
+        </div>
+        <button class="btn ">Оставить заявку</button>
+      </form>
+    </div>
+  </div>
+
 <body>
   <header class="header">
     <a href="#menu" class="menu-btn">
@@ -27,7 +45,7 @@
           <div class="header-number">
             <span>8 800 251 50 71</span>
             <div class="header-number-btn">
-              <button class="btn">
+              <button class="btn header-btn">
                 Заказать обратный звонок
               </button>
             </div>
@@ -86,7 +104,7 @@
       </div>
       <div class="services-wrap">
           <div class="services-block">
-              <div class="services-block__img">
+              <div  class="services-block__img">
                 <img src="img/bankruptcy.png" alt="bankruptcy">
               </div>
               <div class="services-block__title">
@@ -268,6 +286,12 @@
                 return false;
         });
         });
+      $('.header-btn').on("click", function(){
+        $('.overlay').show();
+      });
+      $('.popup-close').on("click", function(){
+        $('.overlay').hide();
+      });
      });
    </script>
 
