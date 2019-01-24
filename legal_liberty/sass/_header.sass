@@ -1,0 +1,40 @@
+.header
+  background: url(../img/header-bg.png) no-repeat center / cover
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-company
+    display: flex
+    color: #fff
+    align-items: center
+    margin-top: 20px
+    &__name
+      text-align: center
+      h1
+        font-size: 25px
+        line-height: 0px
+      span
+        font-size: 17px
+        color: #b3000d
+        @include roboto
+  &-number
+    text-align: right
+    color: #fff
+    font-size: 22px
+    margin-top: 22px
+    margin-bottom: 19px
+    &-btn
+      margin-top: 14px
+    span
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        top: 3px
+        left: -20px
+        background: url(../img/phone.png) center no-repeat / cover
+        width: 12px
+        height: 19px
+
+    
