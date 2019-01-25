@@ -77,7 +77,8 @@
     transition: all 0.5s
     left: -100vw
     &_active
-      height: 100vw
+      width: 100vw
+      height: 100vh
       left: 0
     .main-menu
       border-top: none
@@ -104,4 +105,51 @@
   .header-company
     h1
       font-size: 15px 
+@media (max-width: 480px)
+  .header-company
+    &__name
+      display: none
+  .header-number
+    margin-right: 20%
+  .main
+    &-title
+      font-size: 20px
+    &-descr
+      font-size: 18px  
+  .history
+    &-title
+      font-size: 25px
+    &-left
+      margin-bottom: 50px
+      h2
+    &-right
+      h2
+        font-size: 16px
+@media (max-width: 415px)
+  .treatment-wrap__img
+    img
+      width: 100%
+  .history
+    margin-bottom: 100px
+    &-left
+      flex-direction: column
+      margin-bottom: 220px
+      img
+        max-width: 165px
+        max-width: 164px
+        margin: 0 auto
+        width: 60%
+        margin-bottom: 30px
+      &-text
+        text-align: center
+    &-right
+      flex-direction: column
+      margin-bottom: 30px
+      img
+        max-width: 165px
+        max-width: 164px
+        margin: 0 auto
+        width: 60%
+        margin-bottom: 30px
 
+    
